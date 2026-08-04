@@ -25,7 +25,7 @@ names(sample_table) <- c("sample_type","Cell_Type", "Cell_Number")
 plot_sample <- ggplot(sample_table, aes(
     x=sample_type, weight=Cell_Number, fill=Cell_Type)) +
   geom_bar(position="fill") +
-  scale_fill_manual(values=colour) + 
+  scale_fill_manual(values=cols) + 
   theme(panel.grid = element_blank(),
         panel.background = element_rect(fill = "transparent",colour = NA),
         axis.line.x = element_line(colour = "black") ,
