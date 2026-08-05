@@ -77,6 +77,7 @@ p2 <- p +
     data = label_gene,
     aes(label = gene),
     size = 4,
+    color = "black",
     max.overlaps = 20,
     show.legend = FALSE
   )
